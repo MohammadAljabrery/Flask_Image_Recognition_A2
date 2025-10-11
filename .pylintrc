@@ -3,3 +3,7 @@ ignore=venv
 
 [MESSAGES CONTROL]
 disable=C0114,C0115,C0116,E0401,W0718
+
+[REPORTS]
+score = yes
+fail-under = 7.0

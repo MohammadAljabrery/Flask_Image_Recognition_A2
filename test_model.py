@@ -37,8 +37,139 @@ def test_predict_result(model):
     print(f"Prediction: {prediction} (Type: {type(prediction)})")
 
     # Check that the prediction is an integer (convert if necessary)
-    assert isinstance(prediction, (int, np.integer)), "Prediction should be an integer class index"
+    assert isinstance(prediction, (int, np.integer)), "Prediction should be equal to 5"
 
+def test_predict_result_non_trained_image():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/validation_testing_images/5_test.jpg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 5
+    assert 5 == prediction, "Prediction should be equal to 5"
+
+def test_predict_result_0():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/0/Sign 0 (116).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 0
+    assert 0 == prediction, "Prediction should be equal to 0"
+
+def test_predict_result_1():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/1/Sign 1 (150).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 1
+    assert 1 == prediction, "Prediction should be equal to 1"
+
+def test_predict_result_2():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/2/Sign 2 (87).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 2
+    assert 2 == prediction, "Prediction should be equal to 2"
+
+def test_predict_result_3():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/3/Sign 3 (83).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 3
+    assert 3 == prediction, "Prediction should be equal to 3"
+
+def test_predict_result_4():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/4/Sign 4 (92).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 4
+    assert 4 == prediction, "Prediction should be equal to 4"
+
+def test_predict_result_5():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/5/Sign 5 (147).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 5
+    assert 5 == prediction, "Prediction should be equal to 5"
+
+def test_predict_result_6():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/6/Sign 6 (181).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 6
+    assert 6 == prediction, "Prediction should be equal to 6"
+
+def test_predict_result_7():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/7/Sign 7 (54).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 7
+    assert 7 == prediction, "Prediction should be equal to 7"
+
+def test_predict_result_8():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/8/Sign 8 (3).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 8
+    assert 8 == prediction, "Prediction should be equal to 8"
+
+def test_predict_result_9():
+    """Test the model to see if it can accuretly predict images it was not trained on"""
+    img_path = "test_images/9/Sign 9 (142).jpeg"
+    processed_img = preprocess_img(img_path)
+
+    # Make a prediction
+    prediction = predict_result(processed_img)
+
+
+    # Check that the prediction is equal to 9
+    assert 9 == prediction, "Prediction should be equal to 9"
 
 # Advanced Tests
 
