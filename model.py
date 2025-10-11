@@ -7,6 +7,8 @@ from PIL import Image
 # Loading model
 model = load_model("digit_model.h5")
 
+ERROR = -1
+
 
 # Preparing and pre-processing the image
 def preprocess_img(img_path):
@@ -19,5 +21,8 @@ def preprocess_img(img_path):
 
 # Predicting function
 def predict_result(predict):
-    pred = model.predict(predict)
-    return np.argmax(pred[0], axis=-1)
+    try:
+        pred = model.predict(predict)
+        return np.argmax(pred[0], axis=-1)
+    except Exception:
+        return ERROR
