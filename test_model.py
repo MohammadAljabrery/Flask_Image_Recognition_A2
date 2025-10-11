@@ -52,7 +52,7 @@ def test_predict_result_non_trained_image():
     assert 5 == prediction, "Prediction should be equal to 5"
 
 def test_predict_result_0():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 0"""
     img_path = "test_images/0/Sign 0 (116).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -64,7 +64,7 @@ def test_predict_result_0():
     assert 0 == prediction, "Prediction should be equal to 0"
 
 def test_predict_result_1():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 1"""
     img_path = "test_images/1/Sign 1 (150).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -76,7 +76,7 @@ def test_predict_result_1():
     assert 1 == prediction, "Prediction should be equal to 1"
 
 def test_predict_result_2():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 2"""
     img_path = "test_images/2/Sign 2 (87).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -88,7 +88,7 @@ def test_predict_result_2():
     assert 2 == prediction, "Prediction should be equal to 2"
 
 def test_predict_result_3():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 3"""
     img_path = "test_images/3/Sign 3 (83).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -100,7 +100,7 @@ def test_predict_result_3():
     assert 3 == prediction, "Prediction should be equal to 3"
 
 def test_predict_result_4():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 4"""
     img_path = "test_images/4/Sign 4 (92).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -112,7 +112,7 @@ def test_predict_result_4():
     assert 4 == prediction, "Prediction should be equal to 4"
 
 def test_predict_result_5():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 5"""
     img_path = "test_images/5/Sign 5 (147).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -124,7 +124,7 @@ def test_predict_result_5():
     assert 5 == prediction, "Prediction should be equal to 5"
 
 def test_predict_result_6():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 6"""
     img_path = "test_images/6/Sign 6 (181).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -136,7 +136,7 @@ def test_predict_result_6():
     assert 6 == prediction, "Prediction should be equal to 6"
 
 def test_predict_result_7():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 7"""
     img_path = "test_images/7/Sign 7 (54).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -148,7 +148,7 @@ def test_predict_result_7():
     assert 7 == prediction, "Prediction should be equal to 7"
 
 def test_predict_result_8():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 8"""
     img_path = "test_images/8/Sign 8 (3).jpeg"
     processed_img = preprocess_img(img_path)
 
@@ -160,7 +160,7 @@ def test_predict_result_8():
     assert 8 == prediction, "Prediction should be equal to 8"
 
 def test_predict_result_9():
-    """Test the model to see if it can accuretly predict images it was not trained on"""
+    """Test the model to see if it can accuretly predict an image of hand holding up 9"""
     img_path = "test_images/9/Sign 9 (142).jpeg"
     processed_img = preprocess_img(img_path)
 
