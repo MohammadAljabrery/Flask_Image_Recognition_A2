@@ -16,15 +16,22 @@ def main():
 # Prediction route
 @app.route('/prediction', methods=['POST'])
 def predict_image_file():
+    """
+    Prediction route that processes uploaded images.
+
+    Returns:
+        str: Rendered HTML template with prediction results or error message
+    """
     try:
         if request.method == 'POST':
             img = preprocess_img(request.files['file'].stream)
             pred = predict_result(img)
             return render_template("result.html", predictions=str(pred))
-
-    except:
-        error = "File cannot be processed."
-        return render_template("result.html", err=error)
+        return render_template("result.html", err="Invalid request method")
+    except Exception as error:
+        error_message = "File cannot be processed."
+        print(f"Error occurred: {error}")
+        return render_template("result.html", err=error_message)
 
 
 # Driver code
